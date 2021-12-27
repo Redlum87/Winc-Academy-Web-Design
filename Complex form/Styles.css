@@ -1,0 +1,47 @@
+/**{
+    margin:2%;
+}*/
+
+main{
+    border:1px grey solid;
+}
+section{
+    border:2px black solid;
+}
+header{
+    border:1px grey dotted;
+}
+
+img{
+    margin: 0% 10%
+}
+
+details{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+/*
+// Smartphones (portrait)
+minimal width : 320px;
+
+// Tablets (portrait)
+minimal width : 768px
+
+// Desktop 
+minimal width : 1024px 
+*/
+
+/* Media Queries*/
+
+/* mobile version */
+
+@media (min-width: 1024px) {
+    main{
+    background-color: rgb(141, 216, 235);
+    color: rgb(80, 80, 80); 
+    font-size: smaller;
+    line-height: 0.5rem;
+    }
+}
