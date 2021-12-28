@@ -1,0 +1,201 @@
+/* Kleur en algemeen */
+
+header div {
+    background-color: #3F3A60;
+}
+
+
+/* Typography: Kleuren */
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-text-fill-color: orangered;
+}
+
+a {
+    color: hsl(213, 36%, 32%);
+}
+
+
+/* Typography: textgrote */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+header nav {
+    font-size: 2.4rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+
+/* Element stijlen */
+
+header div {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(9, 27, 185);
+}
+
+img {
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 3px 3px 3px gray;
+}
+
+header li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid blue;
+}
+
+header li.last {
+    border-bottom-width: 0px;
+}
+
+footer {
+    border-top: 2px solid blue;
+    padding-top: 1rem;
+}
+
+footer div {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+footer li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+
+/* Layout */
+
+
+/* Margin en padding aangepast voor mobiel */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Alle elementen hetzelfde */
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+header ul {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+header nav li {
+    margin-bottom: 0.2rem;
+    list-style: none;
+}
+
+header ul a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 2rem;
+}
+
+footer {
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+
+/*Breakpoint*/
+
+@media (min-width: 1157px) {
+    body {
+        background-color: #ffffff;
+        color: #111111;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    main {
+        margin: 0 20%;
+    }
+    header h1 {
+        font-size: 5rem;   
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    header nav li {
+        font-size: 3.5rem;
+        display: inline-block;
+        border-bottom-width: 0;
+        margin: 3rem;
+        background-color: #3F3A60;
+        border: 3px solid #3F3A60;
+        border-radius: 0.5rem;
+        padding: 3rem;
+    }
+    header nav li.last {
+        border-bottom-width: 3px;
+        margin-right: 0;
+    }
+
+    footer nav li {
+        display: inline;
+    }
+    footer nav {
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .btn {
+        color:white;
+    }
+}
+
+
+
+.column {
+    float: left;
+    margin-right: 3%;
+    width: 30%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 776px) {
+    .column {
+      width: 100%;
+    }
+  }
